@@ -10,12 +10,12 @@ canvas {
 }
 
 body {
-    opacity: 1;
-    transition: 1s opacity;
+	opacity: 1;
+	transition: 1s opacity;
 }
 body.fade-out {
-    opacity: 0;
-    transition: none;
+	opacity: 0;
+	transition: none;
 }
 
 header {
@@ -52,6 +52,12 @@ h3,
 	width: 900px;
 	height: 700px;
 	max-width: 80%;
+}
+
+video {
+	display: inline-block;
+	max-width: 80%;
+	transform: translate(10%, -20%);
 }
 
 .modal.active {
