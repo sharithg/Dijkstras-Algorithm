@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">
+				You are using an <strong>outdated</strong> browser. Please
+				<a href="#">upgrade your browser</a> to improve your experience.
+			</p>
+		<![endif]-->
+
+		<header class="menu">
+			<div class="opts">
+				<h3>Edge</h3>
+				<h3 id="vertex1">X</h3>
+				<h3>---></h3>
+				<h3 id="vertex2">X</h3>
+				<h3>Has Weight</h3>
+				<div id="weig"><input id="weight" placeholder="enter weight" /></div>
+				<button id="entweig" onclick="weightInp()">Add weight</button>
+			</div>
+			<div class="btn1">
+				<button id="dji" onclick="findPathWithDijkstra()">
+					Do Djikstra
+				</button>
+				<button id="bfs" onclick="BFS()">
+					Do BFS
+				</button>
+				<button data-modal-target="#modal">Help</button>
+			</div>
+		</header>
+		<canvas class="canvas"></canvas>
+
+		<div class="modal" id="modal">
+			<div class="modal-header">
+				<div class="title">Example Modal</div>
+				<button data-close-button class="close-button">&times;</button>
+			</div>
+			<div class="modal-body">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias
+				ut illo doloremque eum ipsum obcaecati distinctio debitis reiciendis
+				quae quia soluta totam doloribus quos nesciunt necessitatibus,
+				consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum
+				voluptatem totam, molestiae rem at ad autem dolor ex aperiam. Amet
+				assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur
+				sint officiis perferendis atque! Voluptatem maxime eius eum dolorem
+				dolor exercitationem quis iusto totam! Repudiandae nobis nesciunt sequi
+				iure! Eligendi, eius libero. Ex, repellat sapiente!
+			</div>
+		</div>
+		<div id="overlay"></div>
+		<script src="script.js" async defer></script>
+	</body>
+</html>
