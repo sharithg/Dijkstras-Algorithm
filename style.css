@@ -56,8 +56,7 @@ h3,
 
 video {
 	display: inline-block;
-	max-width: 80%;
-	transform: translate(10%, -50%);
+	transform: translate(5%, -18%);
 }
 
 .modal.active {
